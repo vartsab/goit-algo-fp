@@ -13,7 +13,9 @@ To check out these features, just run main.py. It kicks off with two linked list
 
 ## 2. Pythagoras Tree Fractal
 This Python program brings the Pythagoras Tree fractal to life using recursion. You can set the depth of recursion, creating fractals of varying complexity.
-![image](https://github.com/user-attachments/assets/2477335e-79b2-4d4c-b7bd-5b62185c257b)
+
+![image](https://github.com/user-attachments/assets/f95a3291-c60d-4a75-a05c-b6fddd73d6fa)
+
 
 ### Features
 - Recursive Tree Generation: Watch the Pythagoras Tree grow.
