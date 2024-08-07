@@ -43,12 +43,7 @@ Visualize it with draw_heap_tree(heap_array).
 
 ### 5. Binary Tree Traversal Visualization
 Experience binary tree traversals with this Python project! It visualizes BFS and DFS algorithms using networkx and matplotlib. Nodes are color-coded based on the traversal order, shifting from dark to light shades. A great way to understand tree traversal techniques!
-
-#### BFS
-![image](https://github.com/user-attachments/assets/56c555c0-3fdd-448d-aee2-275ed2984a30)
-
-#### DFS
-![image](https://github.com/user-attachments/assets/22d871ec-e5c0-4d82-9751-d76e616ce772)
+![image](https://github.com/user-attachments/assets/238877e0-9477-448c-8ff4-c2a800a63872)
 
 
 ### 6. Greedy Algorithm and Dynamic Programming
