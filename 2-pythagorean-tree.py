@@ -30,12 +30,15 @@ def draw_pythagoras_tree(branch_length, angle, level):
 
 def main():
     # Initialize turtle
+    turtle.bgcolor("black")
     turtle.speed('fastest')
     turtle.left(90)  # Point the turtle upwards
     turtle.up()
     turtle.goto(0, -250)
     turtle.down()
-    turtle.color("brown")
+    turtle.color("cyan")
+    turtle.pencolor("cyan")
+    turtle.pensize(7)
 
     # Ask user for the recursion level
     level = int(input("Enter the level of recursion: "))
