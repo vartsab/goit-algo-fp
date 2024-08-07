@@ -5,49 +5,50 @@ def draw_pythagoras_tree(branch_length, angle, level):
     if level == 0:
         return
 
-    # Draw the current branch
+    # Малюємо поточну гілку
     turtle.forward(branch_length)
 
-    # Save the current position and angle
+    # Зберігаємо поточну позицію та кут
     position = turtle.position()
     heading = turtle.heading()
 
-    # Draw the right branch
+    # Малюємо праву гілку
     turtle.left(angle)
     draw_pythagoras_tree(branch_length * math.cos(math.radians(angle)), angle, level - 1)
 
-    # Restore the saved position and angle
+    # Відновлюємо збережену позицію та кут
     turtle.setposition(position)
     turtle.setheading(heading)
 
-    # Draw the left branch
+    # Малюємо ліву гілку
     turtle.right(angle)
     draw_pythagoras_tree(branch_length * math.cos(math.radians(angle)), angle, level - 1)
 
-    # Go back to the initial position
+    # Повертаємося до початкової позиції
     turtle.setposition(position)
     turtle.setheading(heading)
 
 def main():
-    # Initialize turtle
+    # Ініціалізація черепашки
     turtle.bgcolor("black")
-    turtle.speed('fastest')
-    turtle.left(90)  # Point the turtle upwards
-    turtle.up()
-    turtle.goto(0, -250)
-    turtle.down()
     turtle.color("cyan")
     turtle.pencolor("cyan")
     turtle.pensize(7)
+    turtle.speed('fastest')
+    turtle.left(90)  # Повертаємо черепашку вверх
+    turtle.up()
+    turtle.goto(0, -250)
+    turtle.down()
 
-    # Ask user for the recursion level
+    # Запитуємо користувача про рівень рекурсії
     level = int(input("Enter the level of recursion: "))
 
-    # Draw the tree
+    # Малюємо дерево
     draw_pythagoras_tree(100, 45, level)
 
-    # Finish
+    # Завершення
     turtle.done()
 
 if __name__ == "__main__":
     main()
+    

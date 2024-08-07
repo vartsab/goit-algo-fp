@@ -101,6 +101,7 @@ def draw_tree(tree_root, traversal_order, title):
     labels = {node: tree.nodes[node]['label'] for node in tree.nodes()}
 
     plt.figure(figsize=(10, 6))
+
     nx.draw(tree, pos=pos, labels=labels, arrows=False, node_size=2500, node_color=node_colors)
     plt.title(title)
     plt.show()
